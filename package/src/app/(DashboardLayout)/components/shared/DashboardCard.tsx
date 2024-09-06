@@ -25,10 +25,12 @@ const DashboardCard = ({
   middlecontent,
 }: Props) => {
   return (
-    <Card sx={{ padding: 0 }} elevation={9} variant={undefined}>
+    <Card sx={{ padding: 0, bgcolor: "#3C354A" }} elevation={9} variant={undefined}>
       {cardheading ? (
         <CardContent>
-          <Typography variant="h5">{headtitle}</Typography>
+          <Typography variant="h5" color="#fff">
+            {headtitle}
+          </Typography>
           <Typography variant="subtitle2" color="textSecondary">
             {headsubtitle}
           </Typography>
@@ -44,7 +46,7 @@ const DashboardCard = ({
               mb={3}
             >
               <Box>
-                {title ? <Typography variant="h5">{title}</Typography> : ""}
+                {title ? <Typography variant="h5" color="#fff">{title}</Typography> : ""}
 
                 {subtitle ? (
                   <Typography variant="subtitle2" color="textSecondary">

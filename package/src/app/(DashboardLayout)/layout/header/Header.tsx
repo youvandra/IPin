@@ -1,10 +1,7 @@
 import React from 'react';
 import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge, Button } from '@mui/material';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
-// components
-import Profile from './Profile';
-import { IconBellRinging, IconMenu } from '@tabler/icons-react';
+import {  IconMenu } from '@tabler/icons-react';
 
 interface ItemType {
   toggleMobileSidebar:  (event: React.MouseEvent<HTMLElement>) => void;
@@ -18,7 +15,7 @@ const Header = ({toggleMobileSidebar}: ItemType) => {
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none',
-    background: theme.palette.background.paper,
+    background: "transparent",
     justifyContent: 'center',
     backdropFilter: 'blur(4px)',
     [theme.breakpoints.up('lg')]: {
@@ -46,27 +43,13 @@ const Header = ({toggleMobileSidebar}: ItemType) => {
         >
           <IconMenu width="20" height="20" />
         </IconButton>
-
-
-        <IconButton
-          size="large"
-          aria-label="show 11 new notifications"
-          color="inherit"
-          aria-controls="msgs-menu"
-          aria-haspopup="true"
-        >
-          <Badge variant="dot" color="primary">
-            <IconBellRinging size="21" stroke="1.5" />
-          </Badge>
-
-        </IconButton>
         <Box flexGrow={1} />
-        <Stack spacing={1} direction="row" alignItems="center">
-          <Button variant="contained" component={Link} href="/authentication/login"   disableElevation color="primary" >
-            Login
+        
+          <Button variant="outlined"  disableElevation color="secondary" sx={{borderRadius:2}} >
+            Connect Wallet
           </Button>
-          <Profile />
-        </Stack>
+          
+        
       </ToolbarStyled>
     </AppBarStyled>
   );

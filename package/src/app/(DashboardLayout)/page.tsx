@@ -1,45 +1,58 @@
-'use client'
-import { Grid, Box } from '@mui/material';
+'use client';
+import React from 'react';
+import { Box, Typography, Chip, alpha } from '@mui/material';
 import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
-// components
-import SalesOverview from '@/app/(DashboardLayout)/components/dashboard/SalesOverview';
-import YearlyBreakup from '@/app/(DashboardLayout)/components/dashboard/YearlyBreakup';
-import RecentTransactions from '@/app/(DashboardLayout)/components/dashboard/RecentTransactions';
-import ProductPerformance from '@/app/(DashboardLayout)/components/dashboard/ProductPerformance';
-import Blog from '@/app/(DashboardLayout)/components/dashboard/Blog';
-import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/MonthlyEarnings';
 
-const Dashboard = () => {
+
+const Home = () => {
   return (
-    <PageContainer title="Dashboard" description="this is Dashboard">
-      <Box>
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={8}>
-            <SalesOverview />
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <Grid container spacing={3}>
-              <Grid item xs={12}>
-                <YearlyBreakup />
-              </Grid>
-              <Grid item xs={12}>
-                <MonthlyEarnings />
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <RecentTransactions />
-          </Grid>
-          <Grid item xs={12} lg={8}>
-            <ProductPerformance />
-          </Grid>
-          <Grid item xs={12}>
-            <Blog />
-          </Grid>
-        </Grid>
+    <PageContainer title="Home" description="Home">
+      <Box sx={{ 
+        textAlign: 'center', 
+        minHeight: '75vh', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        justifyContent: 'center', 
+        alignItems: 'center',
+        padding: '20px'
+      }}>
+        {/* Introducing Chip */}
+        <Chip 
+          label="INTRODUCING MALINK" 
+          sx={{ 
+            backgroundColor: alpha('#fff', 0.1), 
+            color: '#E5DBF0', 
+            fontWeight: 'bold',
+            letterSpacing: '1px',
+            marginBottom: '16px'
+          }} 
+        />
+
+        {/* Main Title */}
+        <Typography 
+          variant="h1" 
+          sx={{ 
+            fontWeight: 'bold', 
+            color: '#fff', 
+            marginBottom: '12px', 
+            fontSize: '3.5rem',  
+            lineHeight: '1.2',
+          }}>
+          Managed Your <br /> Assets With <br /> Crypto Automation
+        </Typography>
+
+        {/* Subtitle */}
+        <Typography 
+          variant="subtitle1" 
+          sx={{ 
+            color: '#B1A6C4', 
+            fontSize: '1rem',  
+          }}>
+          Ensuring asset safety with automated, secure blockchain solutions for everyone.
+        </Typography>
       </Box>
     </PageContainer>
-  )
-}
+  );
+};
 
-export default Dashboard;
+export default Home;

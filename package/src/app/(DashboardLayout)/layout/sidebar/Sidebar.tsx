@@ -1,6 +1,5 @@
 import { useMediaQuery, Box, Drawer } from "@mui/material";
 import SidebarItems from "./SidebarItems";
-import { Upgrade } from "./Updrade";
 import { Sidebar, Logo } from 'react-mui-sidebar';
 
 interface ItemType {
@@ -16,7 +15,7 @@ const MSidebar = ({
 }: ItemType) => {
   const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up("lg"));
 
-  const sidebarWidth = "270px";
+  const sidebarWidth = "300px";
 
   // Custom CSS for short scrollbar
   const scrollbarStyles = {
@@ -49,6 +48,7 @@ const MSidebar = ({
           PaperProps={{
             sx: {
               boxSizing: "border-box",
+              backgroundColor: "#17163B",
               ...scrollbarStyles,
             },
           }}
@@ -62,7 +62,7 @@ const MSidebar = ({
             }}
           >
             <Sidebar
-              width={'270px'}
+              width={'300px'}
               collapsewidth="80px"
               open={isSidebarOpen}
               themeColor="#5d87ff"
@@ -72,13 +72,12 @@ const MSidebar = ({
               {/* ------------------------------------------- */}
               {/* Logo */}
               {/* ------------------------------------------- */}
-              <Logo img="/images/logos/dark-logo.svg" />
+              
               <Box>
                 {/* ------------------------------------------- */}
                 {/* Sidebar Items */}
                 {/* ------------------------------------------- */}
                 <SidebarItems />
-                <Upgrade />
               </Box>
             </Sidebar >
           </Box>
@@ -96,6 +95,7 @@ const MSidebar = ({
       PaperProps={{
         sx: {
           boxShadow: (theme) => theme.shadows[8],
+          backgroundColor: "#17163B",
           ...scrollbarStyles,
         },
       }}
@@ -117,12 +117,11 @@ const MSidebar = ({
           {/* ------------------------------------------- */}
           {/* Logo */}
           {/* ------------------------------------------- */}
-          <Logo img="/images/logos/dark-logo.svg" />
+          
           {/* ------------------------------------------- */}
           {/* Sidebar Items */}
           {/* ------------------------------------------- */}
           <SidebarItems />
-          <Upgrade />
         </Sidebar>
       </Box>
       {/* ------------------------------------------- */}
