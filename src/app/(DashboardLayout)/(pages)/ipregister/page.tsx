@@ -55,21 +55,8 @@ const IpRegister = () => {
           <Box display="flex" width={{xs:380, sm:500}} maxWidth={{xs:'100%'}} flexDirection={{ xs: 'row', sm: 'row' }} alignItems="flex-start"  sx={{mt:5}}>
             <TextField fullWidth id="description" label="Description" variant="outlined" color="secondary" multiline rows={3} focused />
           </Box>
-
-          {/* Custom file upload */}
-          <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width={{xs:380, sm:500}} maxWidth={{xs:'100%'}} sx={{mt:5, p: 3, border: 2,borderColor:'#fff', borderRadius: '8px', }}>
-            <UploadFileIcon sx={{ color: '#C9C9C9', fontSize: 40 }} />
-            <Typography variant="body1" color="#C9C9C9" sx={{ mt: 2 }}>
-              {fileName ? `File Uploaded: ${fileName}` : 'Upload Your Document'}
-            </Typography>
-            <Button
-              variant="contained"
-              component="label"
-              sx={{ mt: 2, backgroundColor: '#333', color: '#fff', '&:hover': { backgroundColor: '#444' } }}
-            >
-              Choose File
-              <input type="file" hidden onChange={handleFileUpload} />
-            </Button>
+          <Box display="flex" width={{xs:380, sm:500}} maxWidth={{xs:'100%'}} flexDirection={{ xs: 'row', sm: 'row' }} alignItems="flex-start"  sx={{mt:5}}>
+            <TextField fullWidth id="document" label="Document" variant="outlined" color="secondary" multiline rows={3} focused />
           </Box>
 
           {/* Register IP Button */}

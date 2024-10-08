@@ -1,39 +1,9 @@
 export const cardData = [
     {
-      title: 'Title 1',
-      type: 'Patent Right',
-      description: 'Description for title 1',
-      image: null, 
-    },
-    {
-      title: 'Title 2',
-      type: 'Music',
-      description: 'Description for title 2',
-      image: null, 
-    },
-    {
-      title: 'Title 3',
-      type: 'Research Paper',
-      description: 'Description for title 3',
-      image: null,
-    },
-    {
-      title: 'Title 4',
-      type: 'Industrial Design',
-      description: 'Description for title 4',
-      image: null, 
-    },
-    {
-      title: 'Title 5',
-      type: 'Patent Right',
-      description: 'Description for title 5',
-      image: null,
-    },
-    {
-      title: 'Title 6',
-      type: 'Music',
-      description: 'Description for title 6',
-      image: null, 
+      title: 'The Future of Artificial Intelligence in Healthcare', // ini IPname
+      type: 'Health', // ini IP category
+      description: 'This paper discusses how AI is transforming the healthcare industry, focusing on predictive diagnostics, AI-assisted surgeries, and personalized treatment plans. It also examines the ethical implications of AI in medicine.', // ini description
+      image: "https://res.cloudinary.com/engineering-com/image/upload/w_640,h_640,c_limit,q_auto,f_auto/bigstock-Abstract-Technology-Ui-Futuris-228406639_gp1d3a.jpg", // ini gausah
     },
   ];
   

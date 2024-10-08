@@ -10,9 +10,9 @@ const IpDetail = () => {
                 <Box sx={{ p: 4 }}>
                     {/* IP Name and Price */}
                     <Box mb={4}>
-                        <Typography variant="h3" fontSize={{ sm: 40 }}>IP Name</Typography>
+                        <Typography variant="h3" fontSize={{ sm: 40 }}>The Future of Artificial Intelligence in Healthcare</Typography>
                         <Typography variant="h4" fontSize={{ sm: 30 }} mt={2}>
-                            500 BTT
+                            10000 BTT
                         </Typography>
                         
                     </Box>
@@ -34,35 +34,36 @@ const IpDetail = () => {
                                     IP Creator
                                 </Typography>
                                 <Typography variant="body1" color='#000' fontFamily='inter' fontSize={{ sm: 20 }} mt={{ sm: 1 }}>
-                                    John Doe
+                                    Dr Angela White
                                 </Typography>
 
                                 <Typography variant="subtitle2" color='#6C7275' fontFamily='inter' mt={{ xs: 2, sm: 3 }} fontSize={{ sm: 16 }}>
                                     Time Of First Publication
                                 </Typography>
                                 <Typography variant="body1" color='#000' fontFamily='inter' fontSize={{ sm: 20 }} mt={{ sm: 1 }}>
-                                    2024/24/11
+                                    August 18 2023
                                 </Typography>
 
                                 <Typography variant="subtitle2" color='#6C7275' fontFamily='inter' mt={{ xs: 2, sm: 3 }} fontSize={{ sm: 16 }}>
                                     Place Of First Publication
                                 </Typography>
                                 <Typography variant="body1" color='#000' fontFamily='inter' fontSize={{ sm: 20 }} mt={{ sm: 1 }}>
-                                    Indonesia
+                                Toronto Canada
                                 </Typography>
 
                                 <Typography variant="subtitle2" color='#6C7275' fontFamily='inter' mt={{ xs: 2, sm: 3 }} fontSize={{ sm: 16 }}>
                                     Description
                                 </Typography>
                                 <Typography variant="body1" color='#000' fontFamily='inter' fontSize={{ sm: 16 }} mt={{ sm: 1 }}>
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien.
+                                    This paper discusses how AI is transforming the healthcare industry, focusing on predictive diagnostics, AI-assisted surgeries, and personalized treatment plans. It also examines the ethical implications of AI in medicine.
                                 </Typography>
 
                                 <Button 
                                     variant="contained" 
                                     sx={{ mt: 3, backgroundColor: 'black', color: 'white', width: '100%' }}
+                                    disabled
                                 >
-                                    Buy IP
+                                    IP Sold
                                 </Button>
                                 {/* Thin line above category */}
                             <Box 
@@ -83,7 +84,7 @@ const IpDetail = () => {
                                 CATEGORY
                             </Typography>
                             <Typography variant="body1" color='#000' fontFamily='inter' fontSize={{ sm: 14 }} mt={{ sm: 1 }}>
-                                Patent Rights
+                                Health
                             </Typography>
                         </Grid>
                     </Grid>

@@ -46,6 +46,14 @@ function Header({ isDarkBackground }: HeaderProps) {
     if (typeof window.ethereum !== 'undefined') {
       try {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+  
+        const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+  
+        if (chainId !== '0x405') {
+          alert('Please switch to the BTTC network in your wallet.');
+          return;
+        }
+  
         setAccount(accounts[0]);
         localStorage.setItem('walletAccount', accounts[0]); // Simpan ke localStorage
       } catch (error) {
@@ -55,6 +63,7 @@ function Header({ isDarkBackground }: HeaderProps) {
       alert('Please install MetaMask to connect.');
     }
   };
+  
 
   React.useEffect(() => {
     const storedAccount = localStorage.getItem('walletAccount');

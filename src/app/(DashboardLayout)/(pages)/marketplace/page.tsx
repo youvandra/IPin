@@ -68,7 +68,7 @@ const MarketPlace = () => {
               Categories
             </Typography>
             <Box mt={2}>
-              {['All Categories', 'Patent Right', 'Music', 'Research Paper', 'Industrial Design'].map((category) => (
+              {['All Categories', 'Health', 'Music', 'Research Paper', 'Industrial Design'].map((category) => (
                 <Typography 
                   key={category}
                   variant="body2" 
