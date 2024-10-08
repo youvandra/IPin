@@ -88,7 +88,7 @@ const ProfileTable = () => {
                                     />
                                 </TableCell>
                                 <TableCell>
-                                    <Button variant="outlined" size="small" onClick={() => handleNavigateToDetail(item.id)} >See IP</Button>
+                                    <Button variant="outlined" size="small" >See IP</Button>
                                 </TableCell>
                             </TableRow>
                         ))}
